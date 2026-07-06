@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بیشتر بدانید | KICKS - داستان و فلسفه برند</title>
+    <meta name="description" content="با فلسفه، تاریخچه و ارزش‌های برند KICKS آشنا شوید. از سال ۲۰۱۹ تا امروز، داستان ساخت بهترین کفش‌های ایرانی." />
+    <meta name="keywords" content="داستان برند, فلسفه KICKS, تاریخچه کفش, برند ایرانی کفش, ارزش‌های برند" />
+
+    <!-- فونت‌ها و آیکون‌ها -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- استایل‌ها -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="more-info.css" />
+
+    <!-- Structured Data برای صفحه بیشتر بدانید -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "بیشتر بدانید - داستان KICKS",
+      "description": "با فلسفه، تاریخچه و ارزش‌های برند KICKS آشنا شوید.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "KICKS",
+        "foundingDate": "2019",
+        "description": "برند ایرانی تولید کفش‌های اسپرت و روزمره",
+        "numberOfEmployees": "28",
+        "award": "بهترین برند کفش ایرانی در جشنواره مد خاورمیانه ۲۰۲۴"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="ri-football-fill"></i>
+          <span>KICKS</span>
+        </a>
+        <button class="nav-toggle" id="mobileToggle">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><i class="ri-home-4-line"></i> خانه</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"
+              ><i class="ri-information-line"></i> درباره ما</a
+            >
+          </li>
+          <li>
+            <a href="allproducts.html" class="nav-link"
+              ><i class="ri-shopping-bag-3-line"></i> محصولات</a
+            >
+          </li>
+          <li>
+            <a href="index.html#contactPage" class="nav-link"
+              ><i class="ri-phone-line"></i> تماس</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link btn-cart" id="cartBtn">
+              <i class="ri-shopping-cart-2-line"></i>
+              <span class="cart-badge">۰</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ============================================================
+    HERO
+    ============================================================ -->
+    <section class="more-hero" aria-label="داستان و فلسفه برند KICKS">
+      <div class="more-hero-container">
+        <div class="more-hero-content">
+          <span class="more-badge">📖 داستان ما</span>
+          <h1 class="more-hero-title">
+            فراتر از یک کفش،
+            <span class="gradient-text">یک سبک زندگی</span>
+          </h1>
+          <p class="more-hero-desc">
+            در KICKS، ما باور داریم هر قدمی که برمی‌دارید، داستانی برای گفتن
+            دارد. از روز اول، هدف ما خلق کفش‌هایی بوده که نه تنها پاهای شما را
+            بپوشانند، بلکه شخصیت و سبک شما را به نمایش بگذارند.
+          </p>
+          <div class="more-hero-btns">
+            <a href="#story" class="btn-primary">
+              <i class="ri-arrow-left-line"></i> داستان ما را بخوانید
+            </a>
+            <a href="allproducts.html" class="btn-secondary">
+              مشاهده محصولات <i class="ri-arrow-left-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="more-hero-image">
+          <img loading="lazy" src="./assets/hero-shoe.png" alt="کفش اسپرت KICKS - نماد سبک و کیفیت" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    تایم‌لاین
+    ============================================================ -->
+    <section class="story-section" id="story" aria-label="تاریخچه برند KICKS">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">📖 روایت</span>
+          <h2 class="section-title">
+            داستان <span class="gradient-text">KICKS</span>
+          </h2>
+          <p class="section-subtitle">از یک ایده تا یک برند محبوب</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year" itemprop="startDate">۲۰۱۹</span>
+              <h3 itemprop="name">تولد ایده</h3>
+              <p itemprop="description">
+                با یک تیم کوچک از طراحان جوان، ایده‌ی ایجاد برندی که ترکیبی از
+                مد و راحتی باشد، شکل گرفت.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year" itemprop="startDate">۲۰۲۰</span>
+              <h3 itemprop="name">اولین کلکسیون</h3>
+              <p itemprop="description">
+                اولین مجموعه‌ی کفش‌های اسپرت با الهام از معماری مدرن و هنر
+                خیابانی روانه‌ی بازار شد.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year" itemprop="startDate">۲۰۲۲</span>
+              <h3 itemprop="name">رشد و توسعه</h3>
+              <p itemprop="description">
+                با اضافه شدن تیم‌های طراحی و تولید، محصولات ما به ۵۰ مدل مختلف
+                افزایش یافت و فروش آنلاین آغاز شد.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year" itemprop="startDate">۲۰۲۴</span>
+              <h3 itemprop="name">افتخار بین‌المللی</h3>
+              <p itemprop="description">
+                دریافت جایزه‌ی بهترین برند کفش ایرانی در جشنواره‌ی مد خاورمیانه
+                و آغاز صادرات به ۵ کشور.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    ارزش‌ها
+    ============================================================ -->
+    <section class="values-section" aria-label="ارزش‌های برند KICKS">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">💎 ارزش‌ها</span>
+          <h2 class="section-title">
+            چرا <span class="gradient-text">KICKS</span> را انتخاب کنید؟
+          </h2>
+          <p class="section-subtitle">اصولی که ما را از دیگران متمایز می‌کند</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon"><i class="ri-medal-line"></i></div>
+            <h3>کیفیت بی‌نظیر</h3>
+            <p>
+              استفاده از بهترین مواد اولیه با استانداردهای جهانی و کنترل کیفیت
+              دقیق در هر مرحله
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="ri-paint-brush-line"></i></div>
+            <h3>طراحی ایرانی-جهانی</h3>
+            <p>
+              ترکیب هنر اصیل ایرانی با ترندهای روز دنیا، خلق سبکی منحصر‌به‌فرد
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="ri-leaf-line"></i></div>
+            <h3>پایداری و محیط‌زیست</h3>
+            <p>
+              تعهد به استفاده از مواد بازیافتی و کاهش ردپای کربن در فرآیند تولید
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="ri-customer-service-2-line"></i>
+            </div>
+            <h3>رضایت مشتری</h3>
+            <p>پشتیبانی ۲۴ ساعته، گارانتی بازگشت وجه و تجربه‌ی خریدی لذت‌بخش</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    تیم ما
+    ============================================================ -->
+    <section class="team-section" aria-label="تیم حرفه‌ای KICKS">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">👥 تیم</span>
+          <h2 class="section-title">
+            تیم <span class="gradient-text">ما</span>
+          </h2>
+          <p class="section-subtitle">افرادی که پشت پرده‌ی KICKS هستند</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card" itemscope itemtype="https://schema.org/Person">
+            <div class="team-image">
+              <img loading="lazy" src="./assets/user-1.jpeg" alt="امیر رشیدی - موسس و مدیرعامل KICKS" />
+            </div>
+            <h3 itemprop="name">امیر رشیدی</h3>
+            <span class="team-role" itemprop="jobTitle">موسس و مدیرعامل</span>
+            <p>با ۱۲ سال سابقه در صنعت مد و پوشاک</p>
+          </div>
+          <div class="team-card" itemscope itemtype="https://schema.org/Person">
+            <div class="team-image">
+              <img loading="lazy" src="./assets/user-2.jpeg" alt="سارا حسینی - مدیر طراحی KICKS" />
+            </div>
+            <h3 itemprop="name">سارا حسینی</h3>
+            <span class="team-role" itemprop="jobTitle">مدیر طراحی</span>
+            <p>طراح لباس با مدرک از دانشگاه هنر تهران</p>
+          </div>
+          <div class="team-card" itemscope itemtype="https://schema.org/Person">
+            <div class="team-image">
+              <img loading="lazy" src="./assets/user-3.jpeg" alt="محمد کریمی - مدیر تولید KICKS" />
+            </div>
+            <h3 itemprop="name">محمد کریمی</h3>
+            <span class="team-role" itemprop="jobTitle">مدیر تولید</span>
+            <p>متخصص مواد و فرآیندهای تولید پیشرفته</p>
+          </div>
+          <div class="team-card" itemscope itemtype="https://schema.org/Person">
+            <div class="team-image">
+              <img loading="lazy" src="./assets/user-4.jpeg" alt="نگار احمدی - مدیر بازاریابی KICKS" />
+            </div>
+            <h3 itemprop="name">نگار احمدی</h3>
+            <span class="team-role" itemprop="jobTitle">مدیر بازاریابی</span>
+            <p>کارشناس برندینگ و استراتژی دیجیتال</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    آمار
+    ============================================================ -->
+    <section class="stats-section" aria-label="آمار و ارقام KICKS">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" data-target="15000">۰</span>
+            <span class="stat-label">مشتری راضی</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="128">۰</span>
+            <span class="stat-label">مدل کفش</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">۰</span>
+            <span class="stat-label">سال تجربه</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="98">۰</span>
+            <span class="stat-label">درصد رضایت</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    نظرات مشتریان
+    ============================================================ -->
+    <section class="testimonials-section" aria-label="نظرات مشتریان KICKS">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">💬 نظر</span>
+          <h2 class="section-title">
+            نظرات <span class="gradient-text">مشتریان</span>
+          </h2>
+          <p class="section-subtitle">آنچه مشتریان ما درباره KICKS می‌گویند</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <meta itemprop="ratingValue" content="5" />
+            </div>
+            <p class="testimonial-text" itemprop="reviewBody">
+              "کیفیت ساخت این کفش‌ها بی‌نظیره. بعد از ۶ ماه استفاده روزمره، هنوز
+              مثل روز اولش هست. قطعاً دوباره خرید می‌کنم."
+            </p>
+            <div class="testimonial-author">
+              <img loading="lazy" src="./assets/user-1.jpeg" alt="امیر رشید - کاربر KICKS" />
+              <div class="testimonial-author-info">
+                <h4 itemprop="author">امیر رشید</h4>
+                <span>مشتری وفادار</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-half-fill" aria-hidden="true"></i>
+              <meta itemprop="ratingValue" content="4.5" />
+            </div>
+            <p class="testimonial-text" itemprop="reviewBody">
+              "طراحی فوق‌العاده شیک و راحت. تیم پشتیبانی هم خیلی حرفه‌ای بودن.
+              پیشنهاد می‌کنم حتماً امتحان کنید."
+            </p>
+            <div class="testimonial-author">
+              <img loading="lazy" src="./assets/user-2.jpeg" alt="سارا حسینی - کاربر KICKS" />
+              <div class="testimonial-author-info">
+                <h4 itemprop="author">سارا حسینی</h4>
+                <span>طراح لباس</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+            <div class="testimonial-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <i class="ri-star-fill" aria-hidden="true"></i>
+              <meta itemprop="ratingValue" content="5" />
+            </div>
+            <p class="testimonial-text" itemprop="reviewBody">
+              "به عنوان یه ورزشکار حرفه‌ای، کفش‌های KICKS بهترین انتخابی بود که
+              داشتم. ضربه‌گیری عالی و سبک."
+            </p>
+            <div class="testimonial-author">
+              <img loading="lazy" src="./assets/user-3.jpeg" alt="محمد کریمی - کاربر KICKS" />
+              <div class="testimonial-author-info">
+                <h4 itemprop="author">محمد کریمی</h4>
+                <span>ورزشکار حرفه‌ای</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <i class="ri-mail-send-line"></i>
+            <div>
+              <h3>با عضویت در خبرنامه، از جدیدترین تخفیف‌ها باخبر شوید!</h3>
+            </div>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="ایمیل خود را وارد کنید" required />
+            <button type="submit">
+              <i class="ri-send-plane-fill"></i> عضویت
+            </button>
+          </form>
+          <div class="footer-social">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-telegram-2-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+            <a href="#"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4><i class="ri-shopping-bag-3-line"></i> دسترسی سریع</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کفش مردانه</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کفش زنانه</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> اسنیکرز</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کتونی اسپرت</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4><i class="ri-information-line"></i> راهنمای خرید</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> راهنمای سایزبندی</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> شرایط ارسال</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> قوانین بازگشت کالا</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> سوالات متداول</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4><i class="ri-phone-line"></i> ارتباط با ما</h4>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <span class="label">تلفن</span>
+                <span>۰۲۱-۱۲۳۴-۵۶۷۸</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <span class="label">ایمیل</span>
+                <span>support@kicks.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <span class="label">آدرس</span>
+                <span>تهران، ولیعصر، پلاک ۱۲۳</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-payment">
+            <span class="payment-icon"
+              ><i class="ri-bank-card-line"></i> پرداخت امن</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-shield-check-line"></i> نماد اعتماد</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-lock-line"></i> SSL امن</span
+            >
+          </div>
+          <div class="footer-links-bottom">
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">حریم خصوصی</a>
+            <a href="#">درباره ما</a>
+          </div>
+          <div class="footer-copy">© ۲۰۲۶ KICKS. تمامی حقوق محفوظ است.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+    اسکریپت‌ها
+    ============================================================ -->
+    <script src="app.js"></script>
+  </body>
+</html>

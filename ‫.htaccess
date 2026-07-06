@@ -1,0 +1,97 @@
+# .htaccess - در ریشه سایت
+
+# ==========================================================
+# ۱. HTTPS اجباری
+# ==========================================================
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ==========================================================
+# ۲. هدرهای امنیتی
+# ==========================================================
+<IfModule mod_headers.c>
+    # HSTS
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # X-Frame-Options
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # X-Content-Type-Options
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Referrer-Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions-Policy
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# ==========================================================
+# ۳. کش مرورگر
+# ==========================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # تصاویر - ۱ سال
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS و JS - ۱ ماه
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # فونت‌ها - ۱ سال
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    
+    # HTML - ۱ روز
+    ExpiresByType text/html "access plus 1 day"
+    
+    # XML - ۱ ساعت
+    ExpiresByType application/xml "access plus 1 hour"
+</IfModule>
+
+# ==========================================================
+# ۴. فشرده‌سازی Gzip
+# ==========================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/xml text/plain
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json application/xml application/rss+xml
+    AddOutputFilterByType DEFLATE font/woff2 font/woff application/font-woff
+</IfModule>
+
+# ==========================================================
+# ۵. محافظت از فایل‌های حساس
+# ==========================================================
+<FilesMatch "^(config|wp-config|\.htaccess|\.env|README|LICENSE)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ==========================================================
+# ۶. جلوگیری از لیست شدن دایرکتوری‌ها
+# ==========================================================
+Options -Indexes
+
+# ==========================================================
+# ۷. مسدودسازی فایل‌های PHP در پوشه آپلود
+# ==========================================================
+<Directory "assets/uploads">
+    <FilesMatch "\.php$">
+        Deny from all
+    </FilesMatch>
+</Directory>
+
+# ==========================================================
+# ۸. حذف پسوند .html از URL (اختیاری)
+# ==========================================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]

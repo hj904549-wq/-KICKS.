@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محصولات | KICKS - فروشگاه تخصصی کفش اسپرت</title>
+    <meta
+      name="description"
+      content="خرید آنلاین انواع کفش اسپرت، رسمی، مردانه و زنانه از برندهای نایک، آدیداس، پوما، گوچی و جردن با بهترین قیمت و کیفیت."
+    />
+    <meta
+      name="keywords"
+      content="خرید کفش, قیمت کفش, کفش اسپرت, نایک, آدیداس, پوما, جردن, گوچی"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="allproducts.css" />
+    <link rel="canonical" href="https://kicks.com/allproducts.html" />
+
+    <!-- Structured Data برای صفحه محصولات -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "محصولات KICKS",
+        "description": "لیست کامل محصولات فروشگاه کفش KICKS",
+        "numberOfItems": "16",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "کفش ورزشی نایک" },
+          { "@type": "ListItem", "position": 2, "name": "کفش اسپرت آدیداس" },
+          { "@type": "ListItem", "position": 3, "name": "کفش رسمی پوما" },
+          { "@type": "ListItem", "position": 4, "name": "کفش بسکتبال جردن" },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "کفش پیاده‌روی نیوبالانس"
+          },
+          { "@type": "ListItem", "position": 6, "name": "کفش مجلسی گوچی" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ==========================================================
+    HEADER
+    ========================================================== -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="ri-football-fill"></i>
+          <span>KICKS</span>
+        </a>
+        <button class="nav-toggle" id="mobileToggle">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><i class="ri-home-4-line"></i> خانه</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"
+              ><i class="ri-information-line"></i> درباره ما</a
+            >
+          </li>
+          <li>
+            <a href="allproducts.html" class="nav-link active"
+              ><i class="ri-shopping-bag-3-line"></i> محصولات</a
+            >
+          </li>
+          <li class="nav-item" role="none">
+            <a href="./reviews.html" class="nav-link" role="menuitem">
+              <i class="ri-chat-3-line" aria-hidden="true"></i> نظرات
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#contactPage" class="nav-link"
+              ><i class="ri-phone-line"></i> تماس</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link btn-cart" id="cartBtn">
+              <i class="ri-shopping-cart-2-line"></i>
+              <span class="cart-badge" id="cartBadge">۰</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==========================================================
+    HERO
+    ========================================================== -->
+    <section class="products-hero" aria-label="محصولات فروشگاه KICKS">
+      <span class="hero-badge">🛍️ فروشگاه</span>
+      <h1>محصولات <span class="gradient-text">KICKS</span></h1>
+      <p>جدیدترین و محبوب‌ترین کفش‌های ورزشی و روزمره با بهترین کیفیت و قیمت</p>
+    </section>
+
+    <!-- ==========================================================
+    فیلتر
+    ========================================================== -->
+    <section class="filter-section" aria-label="فیلتر محصولات">
+      <div class="container">
+        <div class="filter-wrapper">
+          <div class="filter-search">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="جستجوی محصول..."
+              aria-label="جستجوی محصول"
+            />
+            <button id="searchBtn" aria-label="جستجو">
+              <i class="ri-search-line"></i>
+            </button>
+          </div>
+
+          <div class="filter-categories" id="filterCategories" role="tablist">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              همه
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="men"
+              role="tab"
+              aria-selected="false"
+            >
+              مردانه
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="women"
+              role="tab"
+              aria-selected="false"
+            >
+              زنانه
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="sport"
+              role="tab"
+              aria-selected="false"
+            >
+              اسپرت
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="formal"
+              role="tab"
+              aria-selected="false"
+            >
+              رسمی
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="sale"
+              role="tab"
+              aria-selected="false"
+            >
+              حراج
+            </button>
+          </div>
+
+          <div class="filter-advanced">
+            <select id="brandFilter" aria-label="فیلتر برند">
+              <option value="all">همه برندها</option>
+              <option value="nike">نایک</option>
+              <option value="adidas">آدیداس</option>
+              <option value="puma">پوما</option>
+              <option value="gucci">گوچی</option>
+              <option value="jordan">جردن</option>
+              <option value="newbalance">نیوبالانس</option>
+            </select>
+
+            <select id="sortFilter" aria-label="مرتب‌سازی">
+              <option value="popular">محبوب‌ترین</option>
+              <option value="newest">جدیدترین</option>
+              <option value="price-low">قیمت: کم به زیاد</option>
+              <option value="price-high">قیمت: زیاد به کم</option>
+              <option value="rating">بالاترین امتیاز</option>
+            </select>
+
+            <div class="price-range">
+              <span>حداکثر قیمت:</span>
+              <input
+                type="range"
+                id="priceRange"
+                min="500000"
+                max="8000000"
+                step="500000"
+                value="8000000"
+                aria-label="حداکثر قیمت"
+              />
+              <span class="price-label" id="priceLabel">۸,۰۰۰,۰۰۰</span>
+            </div>
+
+            <button
+              class="btn-reset-filter"
+              id="resetFilterBtn"
+              aria-label="حذف همه فیلترها"
+            >
+              حذف فیلترها
+            </button>
+          </div>
+
+          <div class="filter-result" id="resultCount">
+            نمایش <strong id="visibleCount">۰</strong> محصول از
+            <strong id="totalCount">۰</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    گرید محصولات
+    ========================================================== -->
+    <section class="products-grid-section" aria-label="لیست محصولات">
+      <div class="container">
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div
+          class="pagination-section"
+          id="pagination"
+          role="navigation"
+          aria-label="صفحه‌بندی"
+        >
+          <button
+            class="page-btn prev-next"
+            id="prevPage"
+            aria-label="صفحه قبلی"
+          >
+            ‹
+          </button>
+          <button
+            class="page-btn active"
+            data-page="1"
+            aria-label="صفحه ۱"
+            aria-current="page"
+          >
+            ۱
+          </button>
+          <button class="page-btn" data-page="2" aria-label="صفحه ۲">۲</button>
+          <button class="page-btn" data-page="3" aria-label="صفحه ۳">۳</button>
+          <button
+            class="page-btn prev-next"
+            id="nextPage"
+            aria-label="صفحه بعدی"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    فلش سیل
+    ========================================================== -->
+    <section class="flash-sale" aria-label="تخفیف‌های شگفت‌انگیز">
+      <div class="container">
+        <div class="flash-sale-header">
+          <h2><i class="ri-flashlight-fill"></i> پیشنهاد شگفت‌انگیز</h2>
+          <div
+            class="flash-timer"
+            id="flashTimer"
+            aria-label="زمان باقی‌مانده تا پایان تخفیف"
+          >
+            <div class="time-unit">
+              <span class="number" id="hours">۱۲</span>
+              <span class="label">ساعت</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+              <span class="number" id="minutes">۳۰</span>
+              <span class="label">دقیقه</span>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-unit">
+              <span class="number" id="seconds">۰۰</span>
+              <span class="label">ثانیه</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper flash-swiper"
+          id="flashSwiper"
+          aria-label="اسلایدر محصولات تخفیف‌دار"
+        >
+          <div class="swiper-wrapper" id="flashWrapper"></div>
+          <div class="swiper-button-next" aria-label="محصول بعدی"></div>
+          <div class="swiper-button-prev" aria-label="محصول قبلی"></div>
+          <div class="swiper-pagination" aria-label="اسلایدها"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    برندها
+    ========================================================== -->
+    <section class="brands-section" aria-label="برندهای محبوب فروشگاه">
+      <div class="container">
+        <h2 class="section-title">
+          برندهای <span class="gradient-text">محبوب</span>
+        </h2>
+        <div class="brands-grid">
+          <div class="brand-item">
+            <i class="ri-football-fill"></i>
+            <span>نایک</span>
+          </div>
+          <div class="brand-item">
+            <i class="ri-football-line"></i>
+            <span>آدیداس</span>
+          </div>
+          <div class="brand-item">
+            <i class="ri-t-shirt-fill"></i>
+            <span>پوما</span>
+          </div>
+          <div class="brand-item">
+            <i class="ri-award-line"></i>
+            <span>گوچی</span>
+          </div>
+          <div class="brand-item">
+            <i class="ri-medal-line"></i>
+            <span>جردن</span>
+          </div>
+          <div class="brand-item">
+            <i class="ri-star-line"></i>
+            <span>نیوبالانس</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    FOOTER
+    ========================================================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <i class="ri-mail-send-line"></i>
+            <div>
+              <h3>با عضویت در خبرنامه، از جدیدترین تخفیف‌ها باخبر شوید!</h3>
+            </div>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="ایمیل خود را وارد کنید" required />
+            <button type="submit">
+              <i class="ri-send-plane-fill"></i> عضویت
+            </button>
+          </form>
+          <div class="footer-social">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-telegram-2-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+            <a href="#"><i class="ri-tiktok-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4><i class="ri-shopping-bag-3-line"></i> دسترسی سریع</h4>
+            <ul>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کفش مردانه</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کفش زنانه</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> اسنیکرز</a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> کتونی اسپرت</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4><i class="ri-information-line"></i> راهنمای خرید</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> راهنمای سایزبندی</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="ri-arrow-left-s-line"></i> شرایط ارسال</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> قوانین بازگشت کالا</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line"></i> سوالات متداول</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4><i class="ri-phone-line"></i> ارتباط با ما</h4>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <span class="label">تلفن</span>
+                <span>۰۲۱-۱۲۳۴-۵۶۷۸</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <span class="label">ایمیل</span>
+                <span>support@kicks.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <span class="label">آدرس</span>
+                <span>تهران، ولیعصر، پلاک ۱۲۳</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-payment">
+            <span class="payment-icon"
+              ><i class="ri-bank-card-line"></i> پرداخت امن</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-shield-check-line"></i> نماد اعتماد</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-lock-line"></i> SSL امن</span
+            >
+          </div>
+          <div class="footer-links-bottom">
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">حریم خصوصی</a>
+            <a href="#">درباره ما</a>
+          </div>
+          <div class="footer-copy">© ۲۰۲۶ KICKS. تمامی حقوق محفوظ است.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================
+    مودال سبد خرید
+    ========================================================== -->
+    <div class="cart-overlay" id="cartOverlay" style="display: none">
+      <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+          <h2><i class="ri-shopping-cart-2-line"></i> سبد خرید</h2>
+          <button
+            class="cart-close"
+            id="cartModalClose"
+            aria-label="بستن سبد خرید"
+          >
+            &times;
+          </button>
+        </div>
+        <div id="cartItemsContainer">
+          <div class="cart-empty">
+            <i class="ri-shopping-cart-line"></i>
+            <p>سبد خرید شما خالی است</p>
+          </div>
+        </div>
+        <div id="cartTotalContainer" style="display: none">
+          <div class="cart-summary">
+            <div class="summary-row total">
+              <span class="label">مجموع:</span>
+              <span class="value" id="cartTotalPrice">۰</span>
+            </div>
+            <button class="checkout-btn" aria-label="تکمیل خرید">
+              <i class="ri-check-line"></i> تکمیل خرید
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="products-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

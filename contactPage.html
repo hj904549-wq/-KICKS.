@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==========================================================
+    HEADER / NAVBAR
+    ========================================================== -->
+    <header class="header" role="banner">
+      <nav class="navbar" role="navigation" aria-label="منوی اصلی">
+        <!-- لوگو -->
+        <a href="#" class="nav-logo" aria-label="صفحه اصلی KICKS">
+          <i class="ri-football-fill" aria-hidden="true"></i>
+          <span>KICKS.</span>
+        </a>
+
+        <!-- دکمه همبرگری برای موبایل -->
+        <button
+          class="nav-toggle"
+          id="mobileToggle"
+          aria-label="باز و بسته کردن منو"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line" aria-hidden="true"></i>
+        </button>
+
+        <!-- منوی اصلی -->
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="#home" class="nav-link active" role="menuitem">
+              <i class="ri-home-4-line" aria-hidden="true"></i> خانه
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">
+              <i class="ri-information-line" aria-hidden="true"></i> درباره ما
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a
+              href="#"
+              class="nav-link"
+              onclick="
+                window.location.href = './allproducts.html';
+                return false;
+              "
+              role="menuitem"
+            >
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i> محصولات
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="./reviews.html" class="nav-link" role="menuitem">
+              <i class="ri-chat-3-line" aria-hidden="true"></i> نظرات
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="./contactPage.html" class="nav-link" role="menuitem">
+              <i class="ri-phone-line" aria-hidden="true"></i> تماس
+            </a>
+          </li>
+
+          <!-- دکمه علاقه‌مندی‌ها -->
+          <li class="nav-item" role="none">
+            <a
+              href="#"
+              class="nav-link btn-favorites"
+              id="favoritesBtn"
+              role="menuitem"
+              aria-label="علاقه‌مندی‌ها"
+            >
+              <i class="ri-heart-line" aria-hidden="true"></i>
+              <span>علاقه‌مندی‌ها</span>
+              <span class="favorites-badge" aria-label="تعداد علاقه‌مندی‌ها"
+                >۰</span
+              >
+            </a>
+          </li>
+
+          <!-- دکمه سبد خرید -->
+          <li class="nav-item" role="none">
+            <a
+              href="#"
+              class="nav-link btn-cart"
+              id="cartBtn"
+              role="menuitem"
+              aria-label="سبد خرید"
+            >
+              <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+              <span>سبد خرید</span>
+              <span class="cart-badge" aria-label="تعداد اقلام سبد خرید"
+                >۰</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==========================================================
+    صفحه تماس
+    ========================================================== -->
+    <section class="contact-page" id="contactPage" aria-label="تماس با ما">
+      <div class="contact-container">
+        <!-- اطلاعات تماس -->
+        <div class="contact-info">
+          <h1 class="contact-title">
+            ارتباط با <span class="gradient-text">ما</span>
+          </h1>
+          <p class="contact-description">
+            سوالی دارید؟ نیاز به مشاوره دارید؟ یا می‌خواهید درباره سفارش خود
+            صحبت کنید؟ ما اینجا هستیم تا به شما کمک کنیم. فرم زیر را پر کنید یا
+            از راه‌های ارتباطی دیگر با ما در تماس باشید.
+          </p>
+
+          <div class="contact-methods">
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-phone-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>تلفن پشتیبانی</h4>
+                <p>۰۲۱-۱۲۳۴-۵۶۷۸</p>
+                <span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-mail-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>ایمیل</h4>
+                <p>support@kicks.com</p>
+                <span>پاسخگویی در ۲۴ ساعت</span>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-map-pin-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>آدرس فروشگاه</h4>
+                <p>تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+                <span>همه روزه، ۱۰ تا ۲۰</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <span>ما را در شبکه‌های اجتماعی دنبال کنید</span>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="اینستاگرام"
+                ><i class="ri-instagram-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="تلگرام"
+                ><i class="ri-telegram-2-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="یوتیوب"
+                ><i class="ri-youtube-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="تیک‌تاک"
+                ><i class="ri-tiktok-fill" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- فرم تماس -->
+        <div class="contact-form-wrapper" id="formWrapper">
+          <div class="form-header">
+            <h2>ارسال پیام</h2>
+            <p>ما در اسرع وقت به شما پاسخ خواهیم داد</p>
+          </div>
+
+          <!-- نوار پیشرفت -->
+          <div
+            class="progress-wrap"
+            id="progressWrap"
+            role="progressbar"
+            aria-valuenow="1"
+            aria-valuemin="1"
+            aria-valuemax="3"
+          >
+            <div class="progress-step active" data-step="1">
+              <div class="circle" aria-label="مرحله ۱">۱</div>
+              <span class="label">دلیل تماس</span>
+            </div>
+            <div class="progress-step" data-step="2">
+              <div class="circle" aria-label="مرحله ۲">۲</div>
+              <span class="label">اطلاعات شما</span>
+            </div>
+            <div class="progress-step" data-step="3">
+              <div class="circle" aria-label="مرحله ۳">۳</div>
+              <span class="label">پیام</span>
+            </div>
+          </div>
+
+          <!-- فرم -->
+          <form id="contactForm" novalidate>
+            <!-- استپ ۱: دلیل تماس -->
+            <div class="step active" data-step="1">
+              <div class="form-group">
+                <label for="contactReason"
+                  >دلیل تماس <span class="required">*</span></label
+                >
+                <select
+                  class="form-control"
+                  id="contactReason"
+                  required
+                  aria-required="true"
+                >
+                  <option value="">یک گزینه را انتخاب کنید</option>
+                  <option value="support">پشتیبانی و گارانتی</option>
+                  <option value="sales">مشاوره خرید و سفارش</option>
+                  <option value="feedback">بازخورد و پیشنهاد</option>
+                  <option value="question">سوال درباره محصول</option>
+                  <option value="other">سایر موارد</option>
+                </select>
+                <div class="error-message" id="reasonError" role="alert">
+                  لطفاً دلیل تماس را انتخاب کنید.
+                </div>
+              </div>
+
+              <!-- بخش شرطی مشاوره خرید -->
+              <div id="salesConditional" style="display: none">
+                <div class="calculator-box">
+                  <h4>
+                    <i class="ri-calculator-line" aria-hidden="true"></i> قیمت
+                    تخمینی کفش خود را محاسبه کنید
+                  </h4>
+                  <div class="calc-row">
+                    <div class="form-group">
+                      <label for="brand">برند</label>
+                      <select class="form-control" id="brand">
+                        <option value="nike">نایک</option>
+                        <option value="adidas">آدیداس</option>
+                        <option value="puma">پوما</option>
+                        <option value="gucci">گوچی</option>
+                        <option value="other">سایر</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="shoeSize">سایز</label>
+                      <select class="form-control" id="shoeSize">
+                        <option value="36">۳۶</option>
+                        <option value="37">۳۷</option>
+                        <option value="38">۳۸</option>
+                        <option value="39">۳۹</option>
+                        <option value="40" selected>۴۰</option>
+                        <option value="41">۴۱</option>
+                        <option value="42">۴۲</option>
+                        <option value="43">۴۳</option>
+                        <option value="44">۴۴</option>
+                        <option value="45">۴۵</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="usage">نوع استفاده</label>
+                      <select class="form-control" id="usage">
+                        <option value="daily">استفاده روزمره</option>
+                        <option value="sport">ورزشی</option>
+                        <option value="formal">رسمی و مجلسی</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calc-result">
+                    قیمت تخمینی:
+                    <span id="estimatedPrice">۲,۴۵۰,۰۰۰</span> تومان
+                  </div>
+                  <p class="calc-note">
+                    * این قیمت بر اساس میانگین فروش در فروشگاه محاسبه شده است.
+                  </p>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-primary next-step"
+                  data-next="2"
+                  aria-label="مرحله بعد"
+                >
+                  مرحله بعد
+                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- استپ ۲: اطلاعات شما -->
+            <div class="step" data-step="2">
+              <div class="form-group">
+                <label for="fullName"
+                  >نام و نام خانوادگی <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="مثلاً: امیر رشید"
+                  required
+                  aria-required="true"
+                />
+                <div class="error-message" id="nameError" role="alert">
+                  لطفاً نام خود را وارد کنید.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">ایمیل <span class="required">*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="example@domain.com"
+                  required
+                  aria-required="true"
+                />
+                <div class="error-message" id="emailError" role="alert">
+                  لطفاً یک ایمیل معتبر وارد کنید.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">شماره موبایل</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="۰۹۱۲ ۱۲۳ ۴۵۶۷"
+                />
+                <div class="error-message" id="phoneError" role="alert">
+                  شماره موبایل باید ۱۱ رقم باشد.
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary prev-step"
+                  data-prev="1"
+                  aria-label="بازگشت به مرحله قبل"
+                >
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i> بازگشت
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary next-step"
+                  data-next="3"
+                  aria-label="مرحله بعد"
+                >
+                  مرحله بعد
+                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- استپ ۳: پیام -->
+            <div class="step" data-step="3">
+              <div class="form-group">
+                <label for="message"
+                  >پیام شما <span class="required">*</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="جزئیات درخواست، سوال یا پیشنهاد خود را بنویسید..."
+                  required
+                  aria-required="true"
+                ></textarea>
+                <div class="error-message" id="messageError" role="alert">
+                  لطفاً پیام خود را وارد کنید.
+                </div>
+              </div>
+
+              <div class="summary-box">
+                <p>
+                  <strong>دلیل تماس:</strong> <span id="summaryReason">-</span>
+                </p>
+                <p><strong>نام:</strong> <span id="summaryName">-</span></p>
+                <p><strong>ایمیل:</strong> <span id="summaryEmail">-</span></p>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary prev-step"
+                  data-prev="2"
+                  aria-label="بازگشت به مرحله قبل"
+                >
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i> بازگشت
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="submitBtn"
+                  aria-label="ارسال پیام"
+                >
+                  <i class="ri-send-plane-fill" aria-hidden="true"></i> ارسال
+                  پیام
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- پیام موفقیت -->
+          <div class="success-message" id="successMessage" role="status">
+            <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+            <h2>پیام شما با موفقیت ارسال شد!</h2>
+            <p>به زودی با شما تماس خواهیم گرفت. 🙏</p>
+            <button
+              class="btn btn-primary"
+              id="resetFormBtn"
+              aria-label="ارسال پیام جدید"
+            >
+              <i class="ri-refresh-line" aria-hidden="true"></i> ارسال پیام جدید
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    FOOTER
+    ========================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <!-- بخش خبرنامه و شبکه‌های اجتماعی -->
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <i class="ri-mail-send-line icon" aria-hidden="true"></i>
+            <div>
+              <h3>با عضویت در خبرنامه، از جدیدترین تخفیف‌ها باخبر شوید!</h3>
+              <p class="paragraph">
+                هر هفته بهترین پیشنهادها و محصولات جدید را برای شما می‌فرستیم
+              </p>
+            </div>
+          </div>
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            aria-label="فرم عضویت در خبرنامه"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              required
+              aria-required="true"
+              aria-label="ایمیل"
+            />
+            <button type="submit" aria-label="عضویت در خبرنامه">
+              <i class="ri-send-plane-fill" aria-hidden="true"></i> عضویت
+            </button>
+          </form>
+          <div class="footer-social">
+            <a href="#" aria-label="اینستاگرام KICKS"
+              ><i class="ri-instagram-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تلگرام KICKS"
+              ><i class="ri-telegram-2-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="یوتیوب KICKS"
+              ><i class="ri-youtube-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تیک‌تاک KICKS"
+              ><i class="ri-tiktok-fill" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- ستون‌های فوتر -->
+        <div class="footer-columns">
+          <!-- ستون ۱: دسترسی سریع -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i> دسترسی
+              سریع
+            </h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کفش
+                  مردانه</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کفش
+                  زنانه</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  اسنیکرز</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کتونی
+                  اسپرت</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  دمپایی و صندل</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  تخفیف‌ها و حراج</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۲: راهنمای خرید -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-information-line" aria-hidden="true"></i> راهنمای
+              خرید
+            </h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای سایزبندی</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> شرایط
+                  ارسال</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  قوانین بازگشت کالا</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  سوالات متداول (FAQ)</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای خرید</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۳: ارتباط با ما -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-phone-line" aria-hidden="true"></i> ارتباط با ما
+            </h4>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">تلفن پشتیبانی</span>
+                <span>۰۲۱-۱۲۳۴-۵۶۷۸</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ایمیل</span>
+                <span>support@kicks.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">آدرس فروشگاه</span>
+                <span>تهران، خیابان ولیعصر، پلاک ۱۲۳</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-time-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ساعات کاری</span>
+                <span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش پایینی فوتر -->
+        <div class="footer-bottom">
+          <div class="footer-payment">
+            <span class="payment-icon"
+              ><i class="ri-bank-card-line" aria-hidden="true"></i> پرداخت
+              امن</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-shield-check-line" aria-hidden="true"></i> نماد
+              اعتماد</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-lock-line" aria-hidden="true"></i> SSL امن</span
+            >
+          </div>
+
+          <div class="footer-links-bottom">
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">حریم خصوصی</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+          </div>
+
+          <div class="footer-copy">© 2026 KICKS. تمامی حقوق محفوظ است.</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

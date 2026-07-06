@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reviews</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ==========================================================
+    HEADER / NAVBAR
+    ========================================================== -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="ri-football-fill"></i>
+          <span>KICKS</span>
+        </a>
+        <button class="nav-toggle" id="mobileToggle">
+          <i class="ri-menu-line"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="index.html" class="nav-link"
+              ><i class="ri-home-4-line"></i> خانه</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-link active"
+              ><i class="ri-information-line"></i> درباره ما</a
+            >
+          </li>
+          <li>
+            <a href="allproducts.html" class="nav-link"
+              ><i class="ri-shopping-bag-3-line"></i> محصولات</a
+            >
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="./reviews.html" class="nav-link" role="menuitem">
+              <i class="ri-chat-3-line" aria-hidden="true"></i> نظرات
+            </a>
+          </li>
+          <li>
+            
+            <a href="index.html#contactPage" class="nav-link"
+              ><i class="ri-phone-line"></i> تماس</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav-link btn-cart" id="cartBtn">
+              <i class="ri-shopping-cart-2-line"></i>
+              <span class="cart-badge">۰</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==========================================================
+    بخش نظرات مشتریان - KICKS
+    ========================================================== -->
+    <section class="reviews-section" id="reviews" aria-label="نظرات مشتریان">
+      <div class="reviews-container">
+        <!-- هدر بخش -->
+        <div class="reviews-header">
+          <h2 class="reviews-title">
+            نظرات <span class="gradient-text">مشتریان</span>
+          </h2>
+          <p class="reviews-subtitle">
+            آنچه مشتریان ما درباره کفش‌های ما می‌گویند
+          </p>
+          <div
+            class="reviews-stats"
+            itemscope
+            itemtype="https://schema.org/AggregateRating"
+          >
+            <div class="stat-item">
+              <span class="stat-number" itemprop="ratingValue">۴.۸</span>
+              <span class="stat-label">میانگین امتیاز</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" itemprop="reviewCount">۱,۲۴۷</span>
+              <span class="stat-label">نظر ثبت شده</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">۹۸٪</span>
+              <span class="stat-label">رضایت مشتریان</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- کارت‌های نظرات -->
+        <div class="feedbacks-container" id="feedbacksContainer">
+          <!-- نظر ۱ -->
+          <div
+            class="feed-block"
+            data-index="0"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-1.jpeg"
+                alt="امیر رشید - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">امیر رشید</h3>
+                <p class="role">بازیگر</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "من از این کفش برای استفاده روزمره‌ام خریداری کردم و باید بگم که
+                از راحتی و سبکی آن شگفت‌زده شدم. علاوه بر ظاهر شیک و جذاب، طراحی
+                ارگونومیک آن باعث شد تا بعد از ساعت‌ها پیاده‌روی احساس خستگی
+                نکنم. قطعاً این بهترین خرید من در سال‌های اخیر بوده است!"
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۲ هفته پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۲ -->
+          <div
+            class="feed-block"
+            data-index="1"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-2.jpeg"
+                alt="سارا حسینی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">سارا حسینی</h3>
+                <p class="role">طراح لباس</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "کیفیت ساخت این محصول فوق‌العاده است. بعد از یک ماه استفاده
+                روزانه، هنوز مثل روز اولش هست. زیره کفش بسیار مقاوم و رویه آن
+                کاملاً تنفس‌پذیر است. حتماً به دوستانم هم پیشنهاد می‌کنم."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۱ ماه پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۳ -->
+          <div
+            class="feed-block"
+            data-index="2"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-3.jpeg"
+                alt="محمد کریمی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">محمد کریمی</h3>
+                <p class="role">ورزشکار حرفه‌ای</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-half-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="4.5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "برای تمرینات روزانه‌ام این کفش را انتخاب کردم. واقعاً سبک و
+                راحت است. قوس پا را به خوبی پشتیبانی می‌کند و ضربه‌گیری عالی
+                دارد. تنها نکته‌ای که می‌توانم بگویم، کمی زمان می‌برد تا پا به
+                آن عادت کند."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۳ هفته پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۴ -->
+          <div
+            class="feed-block"
+            data-index="3"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-4.jpeg"
+                alt="نگار احمدی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">نگار احمدی</h3>
+                <p class="role">مدیر فروش</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "به عنوان کسی که ساعتها سر پا می‌ایستم، این کفش نجات‌بخش من
+                بوده. طراحی شیک و مدرن آن باعث می‌شود هم در محیط کار و هم بیرون
+                از آن، ظاهر خوبی داشته باشم. پیشنهاد می‌کنم حتماً امتحان کنید."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۲ ماه پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==========================================================
+    FOOTER
+    ========================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <!-- بخش خبرنامه و شبکه‌های اجتماعی -->
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <i class="ri-mail-send-line icon" aria-hidden="true"></i>
+            <div>
+              <h3>با عضویت در خبرنامه، از جدیدترین تخفیف‌ها باخبر شوید!</h3>
+              <p class="paragraph">
+                هر هفته بهترین پیشنهادها و محصولات جدید را برای شما می‌فرستیم
+              </p>
+            </div>
+          </div>
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            aria-label="فرم عضویت در خبرنامه"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              required
+              aria-required="true"
+              aria-label="ایمیل"
+            />
+            <button type="submit" aria-label="عضویت در خبرنامه">
+              <i class="ri-send-plane-fill" aria-hidden="true"></i> عضویت
+            </button>
+          </form>
+          <div class="footer-social">
+            <a href="#" aria-label="اینستاگرام KICKS"
+              ><i class="ri-instagram-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تلگرام KICKS"
+              ><i class="ri-telegram-2-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="یوتیوب KICKS"
+              ><i class="ri-youtube-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تیک‌تاک KICKS"
+              ><i class="ri-tiktok-fill" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- ستون‌های فوتر -->
+        <div class="footer-columns">
+          <!-- ستون ۱: دسترسی سریع -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i> دسترسی
+              سریع
+            </h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کفش
+                  مردانه</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کفش
+                  زنانه</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  اسنیکرز</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> کتونی
+                  اسپرت</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  دمپایی و صندل</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  تخفیف‌ها و حراج</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۲: راهنمای خرید -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-information-line" aria-hidden="true"></i> راهنمای
+              خرید
+            </h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای سایزبندی</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> شرایط
+                  ارسال</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  قوانین بازگشت کالا</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  سوالات متداول (FAQ)</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای خرید</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۳: ارتباط با ما -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-phone-line" aria-hidden="true"></i> ارتباط با ما
+            </h4>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">تلفن پشتیبانی</span>
+                <span>۰۲۱-۱۲۳۴-۵۶۷۸</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ایمیل</span>
+                <span>support@kicks.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">آدرس فروشگاه</span>
+                <span>تهران، خیابان ولیعصر، پلاک ۱۲۳</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-time-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ساعات کاری</span>
+                <span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش پایینی فوتر -->
+        <div class="footer-bottom">
+          <div class="footer-payment">
+            <span class="payment-icon"
+              ><i class="ri-bank-card-line" aria-hidden="true"></i> پرداخت
+              امن</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-shield-check-line" aria-hidden="true"></i> نماد
+              اعتماد</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-lock-line" aria-hidden="true"></i> SSL امن</span
+            >
+          </div>
+
+          <div class="footer-links-bottom">
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">حریم خصوصی</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+          </div>
+
+          <div class="footer-copy">© 2026 KICKS. تمامی حقوق محفوظ است.</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

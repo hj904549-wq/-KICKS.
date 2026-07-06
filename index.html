@@ -1,0 +1,1573 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KICKS | فروشگاه تخصصی کفش اسپرت و روزمره</title>
+    <meta
+      name="description"
+      content="فروشگاه اینترنتی کفش KICKS با بهترین برندهای نایک، آدیداس، پوما و گوچی. ارسال رایگان، ضمانت کیفیت و قیمت‌های استثنایی."
+    />
+    <meta
+      name="keywords"
+      content="کفش, کتونی, اسپرت, نایک, آدیداس, پوما, جردن, فروشگاه کفش"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- در <head> همه صفحات اضافه کنید -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KICKS - فروشگاه تخصصی کفش اسپرت" />
+    <meta
+      property="og:description"
+      content="بهترین کفش‌های اسپرت و روزمره با کیفیت بالا"
+    />
+    <meta property="og:url" content="https://kicks.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://kicks.com/assets/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="KICKS" />
+    <meta property="og:locale" content="fa_IR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KICKS - فروشگاه تخصصی کفش اسپرت" />
+    <meta
+      name="twitter:description"
+      content="بهترین کفش‌های اسپرت و روزمره با کیفیت بالا"
+    />
+    <meta
+      name="twitter:image"
+      content="https://kicks.com/assets/og-image.jpg"
+    />
+    <meta name="twitter:site" content="@kicks_store" />
+    <link rel="canonical" href="https://kicks.com/index.html" />
+
+    <!-- Structured Data برای صفحه اصلی -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "KICKS",
+        "url": "https://kicks.com",
+        "logo": "https://kicks.com/assets/logo.png",
+        "description": "فروشگاه تخصصی کفش اسپرت و روزمره با بهترین برندهای روز دنیا",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "تهران",
+          "addressCountry": "IR"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1247"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ==========================================================
+    HEADER / NAVBAR
+    ========================================================== -->
+    <header class="header" role="banner">
+      <nav class="navbar" role="navigation" aria-label="منوی اصلی">
+        <!-- لوگو -->
+        <a href="#" class="nav-logo" aria-label="صفحه اصلی KICKS">
+          <i class="ri-football-fill" aria-hidden="true"></i>
+          <span>KICKS.</span>
+        </a>
+
+        <!-- دکمه همبرگری برای موبایل -->
+        <button
+          class="nav-toggle"
+          id="mobileToggle"
+          aria-label="باز و بسته کردن منو"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line" aria-hidden="true"></i>
+        </button>
+
+        <!-- منوی اصلی -->
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="#home" class="nav-link active" role="menuitem">
+              <i class="ri-home-4-line" aria-hidden="true"></i> خانه
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">
+              <i class="ri-information-line" aria-hidden="true"></i> درباره ما
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="allproducts.html" class="nav-link" role="menuitem">
+              <i class="ri-chat-3-line" aria-hidden="true"></i> محصولات
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="./reviews.html" class="nav-link" role="menuitem">
+              <i class="ri-chat-3-line" aria-hidden="true"></i> نظرات
+            </a>
+          </li>
+
+          <li class="nav-item" role="none">
+            <a href="./contactPage.html" class="nav-link" role="menuitem">
+              <i class="ri-phone-line" aria-hidden="true"></i> تماس
+            </a>
+          </li>
+
+          <!-- دکمه علاقه‌مندی‌ها -->
+          <li class="nav-item" role="none">
+            <a
+              href="#"
+              class="nav-link btn-favorites"
+              id="favoritesBtn"
+              role="menuitem"
+              aria-label="علاقه‌مندی‌ها"
+            >
+              <i class="ri-heart-line" aria-hidden="true"></i>
+              <span>علاقه‌مندی‌ها</span>
+              <span class="favorites-badge" aria-label="تعداد علاقه‌مندی‌ها"
+                >۰</span
+              >
+            </a>
+          </li>
+
+          <!-- دکمه سبد خرید -->
+          <li class="nav-item" role="none">
+            <a
+              href="#"
+              class="nav-link btn-cart"
+              id="cartBtn"
+              role="menuitem"
+              aria-label="سبد خرید"
+            >
+              <i class="ri-shopping-cart-2-line" aria-hidden="true"></i>
+              <span>سبد خرید</span>
+              <span class="cart-badge" aria-label="تعداد اقلام سبد خرید"
+                >۰</span
+              >
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ==========================================================
+    HERO SECTION
+    ========================================================== -->
+    <section class="hero" id="home" aria-label="بخش اصلی فروشگاه">
+      <div class="continer">
+        <div class="content">
+          <h1 class="heading-1">
+            کفش های <span class="stroke-text"> بی نظیر </span>
+            <span class="gradient-text"> برای همه </span>
+          </h1>
+          <p class="muted">
+            با هر قدم، برتری و خاص بودن خود را با کفش‌های ما به نمایش بگذارید
+            کفش‌هایی که فراتر از مد روز، استایلی خاص و چشم‌نواز به شما هدیه
+            می‌کنند. در هر مکانی که هستید، با کفش‌های ما بدرخشید و خاص باشید.
+          </p>
+          <div class="discount-wrapper">
+            <img
+              loading="lazy"
+              src="./assets/svg.png"
+              alt="بنر تخفیف ۳۰ درصدی فروش ویژه"
+              class="svg-img-offer"
+            />
+            <h1 class="discount">30% آفر</h1>
+          </div>
+          <div class="hero-btn">
+            <a href="./more-info.html" class="btn primary">بیشتر بدانید</a>
+            <a href="#products" class="btn">خرید کنید</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            loading="lazy"
+            src="./assets/hero-shoe.png"
+            alt="کفش اسپرت KICKS مدل جدید"
+          />
+          <div class="rating-group">
+            <div class="flex row">
+              <h1>4.5</h1>
+              <div
+                class="flex-center stars-container"
+                aria-label="امتیاز ۴.۵ از ۵"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+              </div>
+            </div>
+            <p>400k <span class="muted">نظرات</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    ABOUT SECTION
+    ========================================================== -->
+    <section class="about" id="about" aria-label="درباره ما">
+      <div class="about-image">
+        <img
+          loading="lazy"
+          src="./assets/shoe-1.jpeg"
+          alt="کفش اسپرت KICKS - نمایش کیفیت ساخت و طراحی"
+          class="about-img"
+        />
+      </div>
+      <div class="content-about">
+        <h2 class="titel-about">بالاترین کیفیت کفش اینجا پیدا کنید</h2>
+        <p class="paragraph">
+          کفش‌ها به‌عنوان یکی از مهم‌ترین اجزای پوشاک روزانه، نقش بسزایی در
+          راحتی، سلامت و سبک زندگی افراد ایفا می‌کنند. انتخاب یک جفت کفش مناسب
+          نه تنها ظاهر شیک و جذابی به شما می‌بخشد، بلکه سلامت پاها و ستون فقرات
+          شما را نیز تضمین می‌کند. با توجه به فعالیت‌های روزمره و محیطی که در آن
+          قرار دارید، انتخاب کفش مناسب بسیار اهمیت دارد.
+        </p>
+        <p class="paragraph">
+          کفش‌های ما با طراحی مدرن و استفاده از بهترین مواد اولیه و...
+        </p>
+        <a
+          href="./about.html"
+          class="btn-about-custom"
+          aria-label="مطالعه بیشتر درباره ما"
+          >بیشتر...</a
+        >
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    PRODUCTS SECTION
+    ========================================================== -->
+    <section
+      class="products-section"
+      id="products"
+      aria-label="محصولات پرطرفدار"
+    >
+      <div class="products-header">
+        <div class="header-wrapper">
+          <h2 class="section-title">
+            محصولات <span class="gradient-text">پرطرفدار</span>
+          </h2>
+          <a
+            href="./allproducts.html"
+            class="btn-view-all"
+            aria-label="مشاهده همه محصولات"
+          >
+            <i class="ri-arrow-left-line" aria-hidden="true"></i> مشاهده همه
+          </a>
+        </div>
+        <p class="section-subtitle">
+          جدیدترین و محبوب‌ترین کفش‌های ورزشی و روزمره
+        </p>
+      </div>
+
+      <div class="swiper products-swiper" aria-label="اسلایدر محصولات">
+        <div class="swiper-wrapper">
+          <!-- اسلاید ۱: کفش ورزشی نایک -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div
+                class="product-badge"
+                itemprop="offers"
+                itemscope
+                itemtype="https://schema.org/Offer"
+              >
+                <span
+                  itemprop="priceSpecification"
+                  itemscope
+                  itemtype="https://schema.org/PriceSpecification"
+                >
+                  <span itemprop="discount">حراج</span>
+                </span>
+              </div>
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-3.jpeg"
+                  alt="کفش ورزشی نایک مدل ۲۰۲۴ - رنگ مشکی و سفید"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش ورزشی نایک"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="1"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">کفش ورزشی نایک</h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-half-fill" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۱۲۴</span>)</span>
+                  <meta itemprop="ratingValue" content="4.5" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="2450000"
+                    itemprop="price"
+                    content="2450000"
+                    >۲,۴۵۰,۰۰۰</span
+                  >
+                  <span
+                    class="old-price"
+                    itemprop="priceSpecification"
+                    itemscope
+                    itemtype="https://schema.org/PriceSpecification"
+                  >
+                    <span itemprop="price" content="3200000">۳,۲۰۰,۰۰۰</span>
+                  </span>
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش ورزشی نایک به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- اسلاید ۲: کفش اسپرت آدیداس -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div
+                class="product-badge"
+                itemprop="offers"
+                itemscope
+                itemtype="https://schema.org/Offer"
+              >
+                <span
+                  itemprop="priceSpecification"
+                  itemscope
+                  itemtype="https://schema.org/PriceSpecification"
+                >
+                  <span itemprop="discount">جدید</span>
+                </span>
+              </div>
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-2.jpeg"
+                  alt="کفش اسپرت آدیداس مدل ۲۰۲۴ - رنگ آبی و سفید"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش اسپرت آدیداس"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="2"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">کفش اسپرت آدیداس</h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۸۹</span>)</span>
+                  <meta itemprop="ratingValue" content="5.0" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="3100000"
+                    itemprop="price"
+                    content="3100000"
+                    >۳,۱۰۰,۰۰۰</span
+                  >
+                  <span
+                    class="old-price"
+                    itemprop="priceSpecification"
+                    itemscope
+                    itemtype="https://schema.org/PriceSpecification"
+                  >
+                    <span itemprop="price" content="3800000">۳,۸۰۰,۰۰۰</span>
+                  </span>
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش اسپرت آدیداس به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- اسلاید ۳: کفش رسمی پوما -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-1.jpeg"
+                  alt="کفش رسمی پوما مدل ۲۰۲۴ - رنگ مشکی"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش رسمی پوما"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="3"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">کفش رسمی پوما</h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-line" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۶۷</span>)</span>
+                  <meta itemprop="ratingValue" content="4.0" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="1850000"
+                    itemprop="price"
+                    content="1850000"
+                    >۱,۸۵۰,۰۰۰</span
+                  >
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش رسمی پوما به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- اسلاید ۴: کفش بسکتبال جردن -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div
+                class="product-badge"
+                itemprop="offers"
+                itemscope
+                itemtype="https://schema.org/Offer"
+              >
+                <span
+                  itemprop="priceSpecification"
+                  itemscope
+                  itemtype="https://schema.org/PriceSpecification"
+                >
+                  <span itemprop="discount">پرفروش</span>
+                </span>
+              </div>
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-4.jpeg"
+                  alt="کفش بسکتبال جردن مدل ۲۰۲۴ - رنگ قرمز و مشکی"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش بسکتبال جردن"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="4"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">کفش بسکتبال جردن</h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۲۵۶</span>)</span>
+                  <meta itemprop="ratingValue" content="5.0" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="4200000"
+                    itemprop="price"
+                    content="4200000"
+                    >۴,۲۰۰,۰۰۰</span
+                  >
+                  <span
+                    class="old-price"
+                    itemprop="priceSpecification"
+                    itemscope
+                    itemtype="https://schema.org/PriceSpecification"
+                  >
+                    <span itemprop="price" content="5500000">۵,۵۰۰,۰۰۰</span>
+                  </span>
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش بسکتبال جردن به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- اسلاید ۵: کفش پیاده‌روی نیوبالانس -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-5.jpeg"
+                  alt="کفش پیاده‌روی نیوبالانس مدل ۲۰۲۴ - رنگ خاکستری"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش پیاده‌روی نیوبالانس"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="5"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">
+                  کفش پیاده‌روی نیوبالانس
+                </h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-half-fill" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۱۴۳</span>)</span>
+                  <meta itemprop="ratingValue" content="4.5" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="2200000"
+                    itemprop="price"
+                    content="2200000"
+                    >۲,۲۰۰,۰۰۰</span
+                  >
+                  <span
+                    class="old-price"
+                    itemprop="priceSpecification"
+                    itemscope
+                    itemtype="https://schema.org/PriceSpecification"
+                  >
+                    <span itemprop="price" content="2800000">۲,۸۰۰,۰۰۰</span>
+                  </span>
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش پیاده‌روی نیوبالانس به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- اسلاید ۶: کفش مجلسی گوچی -->
+          <div class="swiper-slide">
+            <div
+              class="product-card"
+              itemscope
+              itemtype="https://schema.org/Product"
+            >
+              <div
+                class="product-badge"
+                itemprop="offers"
+                itemscope
+                itemtype="https://schema.org/Offer"
+              >
+                <span
+                  itemprop="priceSpecification"
+                  itemscope
+                  itemtype="https://schema.org/PriceSpecification"
+                >
+                  <span itemprop="discount">حراج</span>
+                </span>
+              </div>
+              <div class="product-image">
+                <img
+                  loading="lazy"
+                  src="./assets/shoe-6.jpeg"
+                  alt="کفش مجلسی گوچی مدل ۲۰۲۴ - رنگ طلایی"
+                  itemprop="image"
+                />
+                <div class="product-actions">
+                  <button
+                    class="action-btn favorite-btn"
+                    data-product-name="کفش مجلسی گوچی"
+                    aria-label="افزودن به علاقه‌مندی‌ها"
+                  >
+                    <i class="ri-heart-line" aria-hidden="true"></i>
+                  </button>
+                  <button
+                    class="action-btn view-detail-btn"
+                    data-product-id="6"
+                    aria-label="مشاهده جزئیات محصول"
+                  >
+                    <i class="ri-eye-line" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name" itemprop="name">کفش مجلسی گوچی</h3>
+                <div
+                  class="product-rating"
+                  itemprop="aggregateRating"
+                  itemscope
+                  itemtype="https://schema.org/AggregateRating"
+                >
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-fill" aria-hidden="true"></i>
+                  <i class="ri-star-line" aria-hidden="true"></i>
+                  <i class="ri-star-line" aria-hidden="true"></i>
+                  <span>(<span itemprop="reviewCount">۳۴</span>)</span>
+                  <meta itemprop="ratingValue" content="3.0" />
+                </div>
+                <div class="product-price">
+                  <span
+                    class="price"
+                    data-price="5800000"
+                    itemprop="price"
+                    content="5800000"
+                    >۵,۸۰۰,۰۰۰</span
+                  >
+                  <span
+                    class="old-price"
+                    itemprop="priceSpecification"
+                    itemscope
+                    itemtype="https://schema.org/PriceSpecification"
+                  >
+                    <span itemprop="price" content="7200000">۷,۲۰۰,۰۰۰</span>
+                  </span>
+                </div>
+                <button
+                  class="add-to-cart"
+                  aria-label="افزودن کفش مجلسی گوچی به سبد خرید"
+                >
+                  <i class="ri-shopping-cart-line" aria-hidden="true"></i>
+                  افزودن به سبد
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- دکمه‌های ناوبری اسلایدر -->
+        <div class="swiper-button-next" aria-label="محصول بعدی"></div>
+        <div class="swiper-button-prev" aria-label="محصول قبلی"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    بخش نظرات مشتریان - KICKS
+    ========================================================== -->
+    <section class="reviews-section" id="reviews" aria-label="نظرات مشتریان">
+      <div class="reviews-container">
+        <!-- هدر بخش -->
+        <div class="reviews-header">
+          <h2 class="reviews-title">
+            نظرات <span class="gradient-text">مشتریان</span>
+          </h2>
+          <p class="reviews-subtitle">
+            آنچه مشتریان ما درباره کفش‌های ما می‌گویند
+          </p>
+          <div
+            class="reviews-stats"
+            itemscope
+            itemtype="https://schema.org/AggregateRating"
+          >
+            <div class="stat-item">
+              <span class="stat-number" itemprop="ratingValue">۴.۸</span>
+              <span class="stat-label">میانگین امتیاز</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" itemprop="reviewCount">۱,۲۴۷</span>
+              <span class="stat-label">نظر ثبت شده</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">۹۸٪</span>
+              <span class="stat-label">رضایت مشتریان</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- کارت‌های نظرات -->
+        <div class="feedbacks-container" id="feedbacksContainer">
+          <!-- نظر ۱ -->
+          <div
+            class="feed-block"
+            data-index="0"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-1.jpeg"
+                alt="امیر رشید - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">امیر رشید</h3>
+                <p class="role">بازیگر</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "من از این کفش برای استفاده روزمره‌ام خریداری کردم و باید بگم که
+                از راحتی و سبکی آن شگفت‌زده شدم. علاوه بر ظاهر شیک و جذاب، طراحی
+                ارگونومیک آن باعث شد تا بعد از ساعت‌ها پیاده‌روی احساس خستگی
+                نکنم. قطعاً این بهترین خرید من در سال‌های اخیر بوده است!"
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۲ هفته پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۲ -->
+          <div
+            class="feed-block"
+            data-index="1"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-2.jpeg"
+                alt="سارا حسینی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">سارا حسینی</h3>
+                <p class="role">طراح لباس</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "کیفیت ساخت این محصول فوق‌العاده است. بعد از یک ماه استفاده
+                روزانه، هنوز مثل روز اولش هست. زیره کفش بسیار مقاوم و رویه آن
+                کاملاً تنفس‌پذیر است. حتماً به دوستانم هم پیشنهاد می‌کنم."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۱ ماه پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۳ -->
+          <div
+            class="feed-block"
+            data-index="2"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-3.jpeg"
+                alt="محمد کریمی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">محمد کریمی</h3>
+                <p class="role">ورزشکار حرفه‌ای</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-half-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="4.5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "برای تمرینات روزانه‌ام این کفش را انتخاب کردم. واقعاً سبک و
+                راحت است. قوس پا را به خوبی پشتیبانی می‌کند و ضربه‌گیری عالی
+                دارد. تنها نکته‌ای که می‌توانم بگویم، کمی زمان می‌برد تا پا به
+                آن عادت کند."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۳ هفته پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+
+          <!-- نظر ۴ -->
+          <div
+            class="feed-block"
+            data-index="3"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <div class="profile">
+              <img
+                loading="lazy"
+                src="./assets/user-4.jpeg"
+                alt="نگار احمدی - کاربر KICKS"
+              />
+              <div class="profile-info">
+                <h3 class="name" itemprop="author">نگار احمدی</h3>
+                <p class="role">مدیر فروش</p>
+              </div>
+            </div>
+            <div class="details">
+              <div
+                class="stars-container"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <i class="ri-star-fill" aria-hidden="true"></i>
+                <meta itemprop="ratingValue" content="5" />
+              </div>
+              <p class="review-text" itemprop="reviewBody">
+                "به عنوان کسی که ساعتها سر پا می‌ایستم، این کفش نجات‌بخش من
+                بوده. طراحی شیک و مدرن آن باعث می‌شود هم در محیط کار و هم بیرون
+                از آن، ظاهر خوبی داشته باشم. پیشنهاد می‌کنم حتماً امتحان کنید."
+              </p>
+            </div>
+            <div class="bottom">
+              <span class="review-date" itemprop="datePublished"
+                >۲ ماه پیش</span
+              >
+              <span class="verified-badge">
+                <i class="ri-checkbox-circle-fill" aria-hidden="true"></i> خرید
+                تأیید شده
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- دکمه مشاهده همه نظرات -->
+        <div class="reviews-actions">
+          <a
+            href="./reviews.html"
+            class="btn-view-all-reviews"
+            aria-label="مشاهده همه نظرات مشتریان"
+          >
+            <i class="ri-chat-3-line" aria-hidden="true"></i>
+            مشاهده همه نظرات
+            <i class="ri-arrow-left-line" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    صفحه تماس
+    ========================================================== -->
+    <section class="contact-page" id="contactPage" aria-label="تماس با ما">
+      <div class="contact-container">
+        <!-- اطلاعات تماس -->
+        <div class="contact-info">
+          <h1 class="contact-title">
+            ارتباط با <span class="gradient-text">ما</span>
+          </h1>
+          <p class="contact-description">
+            سوالی دارید؟ نیاز به مشاوره دارید؟ یا می‌خواهید درباره سفارش خود
+            صحبت کنید؟ ما اینجا هستیم تا به شما کمک کنیم. فرم زیر را پر کنید یا
+            از راه‌های ارتباطی دیگر با ما در تماس باشید.
+          </p>
+
+          <div class="contact-methods">
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-phone-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>تلفن پشتیبانی</h4>
+                <p>۰۲۱-۱۲۳۴-۵۶۷۸</p>
+                <span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-mail-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>ایمیل</h4>
+                <p>support@kicks.com</p>
+                <span>پاسخگویی در ۲۴ ساعت</span>
+              </div>
+            </div>
+
+            <div class="method-item">
+              <div class="method-icon">
+                <i class="ri-map-pin-line" aria-hidden="true"></i>
+              </div>
+              <div class="method-info">
+                <h4>آدرس فروشگاه</h4>
+                <p>تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+                <span>همه روزه، ۱۰ تا ۲۰</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <span>ما را در شبکه‌های اجتماعی دنبال کنید</span>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="اینستاگرام"
+                ><i class="ri-instagram-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="تلگرام"
+                ><i class="ri-telegram-2-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="یوتیوب"
+                ><i class="ri-youtube-line" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="تیک‌تاک"
+                ><i class="ri-tiktok-fill" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- فرم تماس -->
+        <div class="contact-form-wrapper" id="formWrapper">
+          <div class="form-header">
+            <h2>ارسال پیام</h2>
+            <p>ما در اسرع وقت به شما پاسخ خواهیم داد</p>
+          </div>
+
+          <!-- نوار پیشرفت -->
+          <div
+            class="progress-wrap"
+            id="progressWrap"
+            role="progressbar"
+            aria-valuenow="1"
+            aria-valuemin="1"
+            aria-valuemax="3"
+          >
+            <div class="progress-step active" data-step="1">
+              <div class="circle" aria-label="مرحله ۱">۱</div>
+              <span class="label">دلیل تماس</span>
+            </div>
+            <div class="progress-step" data-step="2">
+              <div class="circle" aria-label="مرحله ۲">۲</div>
+              <span class="label">اطلاعات شما</span>
+            </div>
+            <div class="progress-step" data-step="3">
+              <div class="circle" aria-label="مرحله ۳">۳</div>
+              <span class="label">پیام</span>
+            </div>
+          </div>
+
+          <!-- فرم -->
+          <form id="contactForm" novalidate>
+            <!-- استپ ۱: دلیل تماس -->
+            <div class="step active" data-step="1">
+              <div class="form-group">
+                <label for="contactReason"
+                  >دلیل تماس <span class="required">*</span></label
+                >
+                <select
+                  class="form-control"
+                  id="contactReason"
+                  required
+                  aria-required="true"
+                >
+                  <option value="">یک گزینه را انتخاب کنید</option>
+                  <option value="support">پشتیبانی و گارانتی</option>
+                  <option value="sales">مشاوره خرید و سفارش</option>
+                  <option value="feedback">بازخورد و پیشنهاد</option>
+                  <option value="question">سوال درباره محصول</option>
+                  <option value="other">سایر موارد</option>
+                </select>
+                <div class="error-message" id="reasonError" role="alert">
+                  لطفاً دلیل تماس را انتخاب کنید.
+                </div>
+              </div>
+
+              <!-- بخش شرطی مشاوره خرید -->
+              <div id="salesConditional" style="display: none">
+                <div class="calculator-box">
+                  <h4>
+                    <i class="ri-calculator-line" aria-hidden="true"></i> قیمت
+                    تخمینی کفش خود را محاسبه کنید
+                  </h4>
+                  <div class="calc-row">
+                    <div class="form-group">
+                      <label for="brand">برند</label>
+                      <select class="form-control" id="brand">
+                        <option value="nike">نایک</option>
+                        <option value="adidas">آدیداس</option>
+                        <option value="puma">پوما</option>
+                        <option value="gucci">گوچی</option>
+                        <option value="other">سایر</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="shoeSize">سایز</label>
+                      <select class="form-control" id="shoeSize">
+                        <option value="36">۳۶</option>
+                        <option value="37">۳۷</option>
+                        <option value="38">۳۸</option>
+                        <option value="39">۳۹</option>
+                        <option value="40" selected>۴۰</option>
+                        <option value="41">۴۱</option>
+                        <option value="42">۴۲</option>
+                        <option value="43">۴۳</option>
+                        <option value="44">۴۴</option>
+                        <option value="45">۴۵</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="usage">نوع استفاده</label>
+                      <select class="form-control" id="usage">
+                        <option value="daily">استفاده روزمره</option>
+                        <option value="sport">ورزشی</option>
+                        <option value="formal">رسمی و مجلسی</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calc-result">
+                    قیمت تخمینی:
+                    <span id="estimatedPrice">۲,۴۵۰,۰۰۰</span> تومان
+                  </div>
+                  <p class="calc-note">
+                    * این قیمت بر اساس میانگین فروش در فروشگاه محاسبه شده است.
+                  </p>
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-primary next-step"
+                  data-next="2"
+                  aria-label="مرحله بعد"
+                >
+                  مرحله بعد
+                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- استپ ۲: اطلاعات شما -->
+            <div class="step" data-step="2">
+              <div class="form-group">
+                <label for="fullName"
+                  >نام و نام خانوادگی <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  placeholder="مثلاً: امیر رشید"
+                  required
+                  aria-required="true"
+                />
+                <div class="error-message" id="nameError" role="alert">
+                  لطفاً نام خود را وارد کنید.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">ایمیل <span class="required">*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="example@domain.com"
+                  required
+                  aria-required="true"
+                />
+                <div class="error-message" id="emailError" role="alert">
+                  لطفاً یک ایمیل معتبر وارد کنید.
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">شماره موبایل</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  placeholder="۰۹۱۲ ۱۲۳ ۴۵۶۷"
+                />
+                <div class="error-message" id="phoneError" role="alert">
+                  شماره موبایل باید ۱۱ رقم باشد.
+                </div>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary prev-step"
+                  data-prev="1"
+                  aria-label="بازگشت به مرحله قبل"
+                >
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i> بازگشت
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary next-step"
+                  data-next="3"
+                  aria-label="مرحله بعد"
+                >
+                  مرحله بعد
+                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- استپ ۳: پیام -->
+            <div class="step" data-step="3">
+              <div class="form-group">
+                <label for="message"
+                  >پیام شما <span class="required">*</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="جزئیات درخواست، سوال یا پیشنهاد خود را بنویسید..."
+                  required
+                  aria-required="true"
+                ></textarea>
+                <div class="error-message" id="messageError" role="alert">
+                  لطفاً پیام خود را وارد کنید.
+                </div>
+              </div>
+
+              <div class="summary-box">
+                <p>
+                  <strong>دلیل تماس:</strong> <span id="summaryReason">-</span>
+                </p>
+                <p><strong>نام:</strong> <span id="summaryName">-</span></p>
+                <p><strong>ایمیل:</strong> <span id="summaryEmail">-</span></p>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  type="button"
+                  class="btn btn-secondary prev-step"
+                  data-prev="2"
+                  aria-label="بازگشت به مرحله قبل"
+                >
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i> بازگشت
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  id="submitBtn"
+                  aria-label="ارسال پیام"
+                >
+                  <i class="ri-send-plane-fill" aria-hidden="true"></i> ارسال
+                  پیام
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- پیام موفقیت -->
+          <div class="success-message" id="successMessage" role="status">
+            <i class="ri-checkbox-circle-fill" aria-hidden="true"></i>
+            <h2>پیام شما با موفقیت ارسال شد!</h2>
+            <p>به زودی با شما تماس خواهیم گرفت. 🙏</p>
+            <button
+              class="btn btn-primary"
+              id="resetFormBtn"
+              aria-label="ارسال پیام جدید"
+            >
+              <i class="ri-refresh-line" aria-hidden="true"></i> ارسال پیام جدید
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+    FOOTER
+    ========================================================== -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <!-- بخش خبرنامه و شبکه‌های اجتماعی -->
+        <div class="footer-newsletter">
+          <div class="newsletter-content">
+            <i class="ri-mail-send-line icon" aria-hidden="true"></i>
+            <div>
+              <h3>با عضویت در خبرنامه، از جدیدترین تخفیف‌ها باخبر شوید!</h3>
+              <p class="paragraph">
+                هر هفته بهترین پیشنهادها و محصولات جدید را برای شما می‌فرستیم
+              </p>
+            </div>
+          </div>
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            aria-label="فرم عضویت در خبرنامه"
+          >
+            <input
+              type="email"
+              placeholder="ایمیل خود را وارد کنید"
+              required
+              aria-required="true"
+              aria-label="ایمیل"
+            />
+            <button type="submit" aria-label="عضویت در خبرنامه">
+              <i class="ri-send-plane-fill" aria-hidden="true"></i> عضویت
+            </button>
+          </form>
+          <div class="footer-social">
+            <a href="#" aria-label="اینستاگرام KICKS"
+              ><i class="ri-instagram-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تلگرام KICKS"
+              ><i class="ri-telegram-2-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="یوتیوب KICKS"
+              ><i class="ri-youtube-line" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="تیک‌تاک KICKS"
+              ><i class="ri-tiktok-fill" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- ستون‌های فوتر -->
+        <div class="footer-columns">
+          <!-- ستون ۱: دسترسی سریع -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-shopping-bag-3-line" aria-hidden="true"></i> دسترسی
+              سریع
+            </h4>
+            <ul>
+              <li>
+                <a href="allproducts.html?category=men"
+                  ><i class="ri-arrow-left-s-line"></i> کفش مردانه</a
+                >
+              </li>
+              <li>
+                <a href="allproducts.html?category=women"
+                  ><i class="ri-arrow-left-s-line"></i> کفش زنانه</a
+                >
+              </li>
+              <li>
+                <a href="allproducts.html?category=sport"
+                  ><i class="ri-arrow-left-s-line"></i> اسنیکرز</a
+                >
+              </li>
+              <li>
+                <a href="allproducts.html?category=sport"
+                  ><i class="ri-arrow-left-s-line"></i> کتونی اسپرت</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  دمپایی و صندل</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  تخفیف‌ها و حراج</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۲: راهنمای خرید -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-information-line" aria-hidden="true"></i> راهنمای
+              خرید
+            </h4>
+            <ul>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای سایزبندی</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i> شرایط
+                  ارسال</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  قوانین بازگشت کالا</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  سوالات متداول (FAQ)</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-arrow-left-s-line" aria-hidden="true"></i>
+                  راهنمای خرید</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ستون ۳: ارتباط با ما -->
+          <div class="footer-column">
+            <h4>
+              <i class="ri-phone-line" aria-hidden="true"></i> ارتباط با ما
+            </h4>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">تلفن پشتیبانی</span>
+                <span>۰۲۱-۱۲۳۴-۵۶۷۸</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ایمیل</span>
+                <span>support@kicks.com</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">آدرس فروشگاه</span>
+                <span>تهران، خیابان ولیعصر، پلاک ۱۲۳</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-time-line" aria-hidden="true"></i>
+              <div>
+                <span class="label">ساعات کاری</span>
+                <span>شنبه تا پنجشنبه، ۹ تا ۱۸</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش پایینی فوتر -->
+        <div class="footer-bottom">
+          <div class="footer-payment">
+            <span class="payment-icon"
+              ><i class="ri-bank-card-line" aria-hidden="true"></i> پرداخت
+              امن</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-shield-check-line" aria-hidden="true"></i> نماد
+              اعتماد</span
+            >
+            <span class="payment-icon"
+              ><i class="ri-lock-line" aria-hidden="true"></i> SSL امن</span
+            >
+          </div>
+
+          <div class="footer-links-bottom">
+            <a href="#">قوانین و مقررات</a>
+            <a href="#">حریم خصوصی</a>
+            <a href="#">درباره ما</a>
+            <a href="#">تماس با ما</a>
+          </div>
+
+          <div class="footer-copy">© 2026 KICKS. تمامی حقوق محفوظ است.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================
+    SCRIPTS
+    ========================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
